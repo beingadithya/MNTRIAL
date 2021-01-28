@@ -1,19 +1,39 @@
 <!DOCTYPE html> 
+
 <html> 
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+      setTimeout(show, 12000);
+      function show()
+{
+  document.getElementById('play').style.visibility='visible';
+  document.getElementById('instruct').style.visibility='visible';
+
+}
+    </script> 
+  </head>
 <body> 
  
-       <a href="https://theinevitable007.github.io/Level1MN/">
-        <img src="PlayButtonFinal.png"  style="widows: 250px;height:250px; position: absolute; margin-top: 550px;"> 
-
-        <a href="https://theinevitable007.github.io/Level1MN/">
-          <img src="InstructionsButton.png"  style="widows: 250px;height:250px; position: absolute; margin-top: 550px; margin-left: 1500px;"> 
+       <!-- <a href="https://theinevitable007.github.io/Level1MN/"> -->
+        
 
 <video id="myVid" width="1975" height="900" autoplay>
  <source src="a.mp4" type="video/mp4"  >
   Sorry, your browser does not support HTML5 video.
 </video>
+<a id="play" href='https://theinevitable007.github.io/level1/'>
+  <img src="PlayButtonFinal.png"  style="width: 250px;height:250px; position: absolute; top: 70%; left: 35%;"> </a>
+
+  <a id="instruct" href="https://theinevitable007.github.io/level1/"> 
+    <img src="InstructionsButton.png"  style="width:250px;height:250px; position: absolute; top: 70%; left: 60%;"> </a>
+
+
 <script> 
 var myVideo = document.getElementById("myVid");
+document.getElementById("play").style.visibility = "hidden";
+document.getElementById("instruct").style.visibility = "hidden";
+
 
 </script> 
 </body> 
